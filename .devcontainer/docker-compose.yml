@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  neovim-dev:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config:/app/config
+      - ./data:/app/data
+      # Mounnt local directory to /app/project
+      - ./project:/app/project
+      - /home/mshibla/workspace:/app/workspace:rw
