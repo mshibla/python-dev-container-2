@@ -10,4 +10,4 @@ services:
       - ./data:/app/data
       # Mounnt local directory to /app/project
       - ./project:/app/project
-      - /home/mshibla/workspace:/app/workspace:rw
+      - /home/mshibla/workspace:/app:rw
